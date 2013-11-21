@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html class="no-js">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Place favicon.ico and apple-touch-icon(s) in the root directory -->
+
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+        <link rel="stylesheet" href="css/main.css">
+        <script src="js/vendor/modernizr-2.7.0.min.js"></script>
+    </head>
+    <body>
+        <!--[if lt IE 8]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <!-- Add your site or application content here -->
+        <article class="content">
+            <header class="navbar navbar-default navbar-fixed-top">
+                <div class="container">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="button">
+                            <i class="fa fa-bars"></i>
+                        </button>
+
+                        <a href="#" class="navbar-brand">CSS3 Transitions</a>
+
+                        <div class="btn-group transition-switch pull-left" data-toggle="buttons">
+                            <label class="btn btn-success navbar-btn active">
+                                <input type="radio" name="transition-type" value="new" checked>
+                                <i class="fa fa-smile-o"></i>
+                            </label>
+                            <label class="btn btn-danger navbar-btn">
+                                <input type="radio" name="transition-type" value="old">
+                                <i class="fa fa-frown-o"></i>
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="navbar-collapse new">
+                        <ul class="nav navbar-nav">
+                            <li>
+                                <a href="#difference">What's the difference</a>
+                            </li>
+                            <li>
+                                <a href="#why">Why?</a>
+                            </li>
+                            <li>
+                                <a href="#but">But...</a>
+                            </li>
+                            <li>
+                                <a href="#demos">Some demos</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+            </header>
+
+            <div class="container">
+                <h1 id="difference">What's the difference?</h1>
+                <p class="lead">Performance. FPS. Smoothness. User Experience.</p>
+
+                <h1 id="why">Why?</h1>
+                <p><code>transform</code> properties are mostly hardware accelerated and can use the devices GPU for rendering processes. This calculation is mostly faster, than using the CPU, because of the BUS between the CPU and the graphics card.</p>
+                <p>All other properties, especially those for positions, colors, margins or paddings, are calculated through the CPU.</p>
+                <p>More about this can be found <a href="">here</a>.</p>
+
+                <h1 id="but">But...</h1>
+                <p>Like everything else, heavy usage of such effects should be avoided. Give the user some nice feedbacks and eye candies. But don't leave him with a truck load of moving pixels. He'll get the same type of eye cancer, such as when using <code>&lt;marquee&gt;</code> or <code>&lt;blink&gt;</code>.</p>
+
+                <h1 id="demos">Some demos</h1>
+                <p>Here are some effect demos, that might be neat to use. You can compare these effects by toggling the <i class="fa fa-smile-o"></i> or <i class="fa fa-frown-o"></i> at the top of the page. The sad face will animate with usual properties, like <code>margin</code>, <code>left</code> or <code>top</code>. The happy face will animate with <code>transform</code> properties.</p>
+
+                <h2 id="nav-menu">Slide-In menu</h2>
+                <p>The slide-in menu on the top (mobile only) uses a transition. When using the <i class="fa fa-frown-o"></i>, you can see some "jumps" while animating.</p>
+            </div>
+        </article>
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+</html>
