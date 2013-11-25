@@ -5,8 +5,9 @@ $(function() {
 	$('.navbar-toggle, .navbar-collapse li a').on('click', function() {
 		$('.navbar-collapse').toggleClass('in');
 	});
-	$('.panel-group .panel-title a').on('click', function(e) {
-		$(this).closest('.panel').find('.panel-collapse').toggleClass('in');
-		e.preventDefault();
+	$('.push-down-toggle').on('click', function() {
+		var $target = $($(this).data('target'));
+		$(this).toggleClass('active');
+		$target.toggleClass('in');
 	});
 });
