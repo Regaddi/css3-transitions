@@ -58,3 +58,46 @@
 body {
     padding-top: 70px;
 }
+
+.carousel-inner.new > .item {
+    -webkit-transition: .6s ease-in-out -webkit-transform;
+    -moz-transition: .6s ease-in-out -moz-transform;
+    transition: .6s ease-in-out transform;
+}
+.carousel-inner.new > .item.active {
+    left: auto;
+    -webkit-transform: translate(0,0);
+    -moz-transform: translate(0,0);
+    transform: translate(0,0);
+}
+.carousel-inner.new > .item.next {
+    left: auto;
+    -webkit-transform: translate(100%,0);
+    -moz-transform: translate(100%,0);
+    transform: translate(100%,0);
+}
+.carousel-inner.new > .item.prev {
+    left: auto;
+    -webkit-transform: translate(-100%,0);
+    -moz-transform: translate(-100%,0);
+    transform: translate(-100%,0);
+}
+.carousel-inner.new > .item.next.left,
+.carousel-inner.new > .item.prev.right {
+    left: auto;
+    -webkit-transform: translate(0,0);
+    -moz-transform: translate(0,0);
+    transform: translate(0,0);
+}
+.carousel-inner.new > .item.active.left {
+    left: auto;
+    -webkit-transform: translate(-100%,0);
+    -moz-transform: translate(-100%,0);
+    transform: translate(-100%,0);
+}
+.carousel-inner.new > .item.active.right {
+    left: auto;
+    -webkit-transform: translate(100%,0);
+    -moz-transform: translate(100%,0);
+    transform: translate(100%,0);
+}

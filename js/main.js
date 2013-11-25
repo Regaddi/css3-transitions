@@ -1,6 +1,6 @@
 $(function() {
 	$('.transition-switch input').on('change', function() {
-		$('.navbar-collapse').removeClass('old new').addClass($(this).val());
+		$('.old,.new').removeClass('old new').addClass($(this).val());
 	});
 	$('.navbar-toggle, .navbar-collapse li a').on('click', function() {
 		$('.navbar-collapse').toggleClass('in');
