@@ -1,4 +1,5 @@
 body {
+    overflow: auto;
     padding-top: 70px;
 }
 
@@ -26,9 +27,9 @@ body {
     -webkit-transform-origin: center top;
     -moz-transform-origin: center top;
     transform-origin: center top;
-    -webkit-transition: -webkit-transform 400ms ease;
-    -moz-transition: -moz-transform 400ms ease;
-    transition: transform 400ms ease;
+    -webkit-transition: -webkit-transform 600ms ease;
+    -moz-transition: -moz-transform 600ms ease;
+    transition: transform 600ms ease;
 }
 .navbar-collapse.new.in {
     -webkit-transform: translate(0, 0);
@@ -37,9 +38,9 @@ body {
 }
 .navbar-collapse.old {
     top: -340px;
-    -webkit-transition: top 400ms ease;
-    -moz-transition: top 400ms ease;
-    transition: top 400ms ease;
+    -webkit-transition: top 600ms ease;
+    -moz-transition: top 600ms ease;
+    transition: top 600ms ease;
 }
 .navbar-collapse.old.in {
     top: 100%;
